@@ -11,6 +11,7 @@ namespace AppsTogit
         static void Main(string[] args)
         {
             string run = "run";
+            int cnt = 13;
         }
     }
 }
