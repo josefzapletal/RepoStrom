@@ -38,6 +38,10 @@ Table=[dbo].[Planet];
 </IncludeObjectsInDataSync>
     <DeployChangesInitialImportDone>False</DeployChangesInitialImportDone>
     <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
+    <BuildOptionSkipShadowDeployVS>False</BuildOptionSkipShadowDeployVS>
+    <BuildOptionBackupShadowDatabase>False</BuildOptionBackupShadowDatabase>
+    <BuildOptionSkipLocalSqlBackup>False</BuildOptionSkipLocalSqlBackup>
+    <ReadyRollDeploymentMode>SolutionStart</ReadyRollDeploymentMode>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>

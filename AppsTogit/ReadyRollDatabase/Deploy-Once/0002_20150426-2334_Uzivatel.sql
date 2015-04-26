@@ -1,4 +1,6 @@
 ﻿-- <Migration ID="7290d629-63e8-4d11-85a7-c724d562c953" />
+-- <Migration ID="7290d629-63e8-4d11-85a7-c724d562c953" />
+
 GO
 
 IF (SELECT COUNT(*)
