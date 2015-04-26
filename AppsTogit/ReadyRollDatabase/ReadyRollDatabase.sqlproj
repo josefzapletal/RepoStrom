@@ -30,6 +30,14 @@
     <PostDeploymentSubFolder>Post-Deployment</PostDeploymentSubFolder>
     <TargetDatabaseSet>True</TargetDatabaseSet>
     <GenerateSqlPackage>True</GenerateSqlPackage>
+    <AlwaysUseDefaultConnectionForShadowDatabase>True</AlwaysUseDefaultConnectionForShadowDatabase>
+    <DefaultConnectionString>Data Source=JOSEFDELL\SQLEXPRESS;Initial Catalog=ReadyRoll;Integrated Security=True;Pooling=False</DefaultConnectionString>
+    <ExcludeObjectsFromSync />
+    <IncludeObjectsInDataSync>
+Table=[dbo].[Planet];
+</IncludeObjectsInDataSync>
+    <DeployChangesInitialImportDone>False</DeployChangesInitialImportDone>
+    <GenerateOctopusNuPkg>True</GenerateOctopusNuPkg>
   </PropertyGroup>
   <!-- READYROLL OFFLINE SCHEMA MODEL OPTIONS -->
   <PropertyGroup>
@@ -162,8 +170,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Pre-Deployment\01_Create_Database.sql" />
+    <None Include="ReadyRollDatabase.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Post-Deployment\01_Finalize_Deployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy-Once\0001_20150426-2333_Uzivatel.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Deploy-Once\0002_20150426-2334_Uzivatel.sql" />
   </ItemGroup>
 </Project>
